@@ -6,12 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="jai"><p>this is a para</p></div>
-<button>jay shree Ram</button>
+    
     <style>  
-    #jai{
-       background-color: rgb(10, 254, 116); 
-    }
+  
+.js{
+background-color: blue;
+
+
+}
+
+.js1{
+    background-color: blueviolet;
+}
+
+
     </style>
+
+    <div id="Container" class="js">
+        <p class="para">this is a para</p>
+        <button onclick="shreeRam()">click</button>
+    </div>
+
+    <script>
+
+        function shreeRam(){
+            let om = document.getElementById("Container")
+            om.classList.toggle("js1");
+        }
+    </script>
 </body>
 </html>

@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>navbar</title>
-</head>
-<body>
-<!----------------------style START------------------------>
-<style>
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
+  </head>
+  <body>
+    <!----------------------style START------------------------>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        background-image: url(/icons/Asset\ 1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
+      /******************************nav-css start********************/
 
+      nav {
+        background-color: white;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+      }
+      nav ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      nav li {
+        height: 50px;
+      }
+      nav a {
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+      }
+      nav a:hover {
+        background-color: #f0f0f0;
+      }
+      nav li:first-child {
+        margin-right: auto;
+      }
+      /******************************nav-css end********************/
 
-    
-  
+      /******************************nav-sidebar-css start********************/
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: white;
+        box-shadow: -10px 0 10px rgba (0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .sidebar li {
+        width: 100%;
+      }
+      .sidebar a {
+        width: 100%;
+      }
 
+      /******************************nav-sidebar-css end********************/
+    </style>
+    <!----------------------style END------------------------>
+    <!--========================nav-section-start============================-->
+    <nav>
+      <ul class="sidebar">
+        <li><a href="#">LOGO</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">THEMES</a></li>
+        <li><a href="#">CATEGORY</a></li>
+        <li><a href="#">PRISING</a></li>
+        <li><a href="#">ABOUT US</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">LOGO</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">THEMES</a></li>
+        <li><a href="#">CATEGORY</a></li>
+        <li><a href="#">PRISING</a></li>
+        <li><a href="#">ABOUT US</a></li>
+      </ul>
+    </nav>
 
-</style>
-<!----------------------style END------------------------>
-<!--========================nav-section-start============================-->
-  
-
-
-
-
-
-
-
-
-
-
-
-<!--========================nav-section-End============================-->
-<!----------------------JS START------------------------>
-<script>
-
-
-
-
-</script>
-<!----------------------JS END------------------------>
-
-
-</body>
+    <!--========================nav-section-End============================-->
+    <!----------------------JS START------------------------>
+    <script></script>
+    <!----------------------JS END------------------------>
+  </body>
 </html>
